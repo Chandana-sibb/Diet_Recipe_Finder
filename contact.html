@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Recipe Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin-top: 60px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            padding:30px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav style="background-color: #333; padding: 10px; position: fixed; top: 0; width: 100%; z-index: 1000;margin-left:-40px; ">
+        <div style="display: flex; justify-content: space-around; align-items: center;">
+            <a href="/" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Home</a>
+            <a href="/upload_image_page" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Upload Recipe</a>
+            <a href="/manual_search_page" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Manual Search</a>
+        </div>
+    </nav>
+
+  <h1>Contact Us</h1>
+    <form action="/submit_contact" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if request.method == 'POST' %}
+        <p>Thank you for contacting us! We'll get back to you shortly.</p>
+    {% endif %}
+
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; padding: 20px; position: fixed; bottom: 0; width: 100%; text-align: center;margin-left:-40px; ">
+        <p>&copy; 2024 Recipe Finder. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

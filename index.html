@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <style>
+        body {
+            margin-top: 60px;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f5f1;
+            background-image: url('background.jpeg'); /* Path to your background image */
+            background-size: cover; /* Ensure the image covers the entire page */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repeating the image */
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            margin-left: none;
+           
+           
+        }
+        h1 {
+            color:#534293;
+        }
+        .intro {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+           
+        }
+        .card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .card h2 {
+            color:#534293;
+        }
+        .card p {
+            margin: 15px 0;
+        }
+        a {
+            background-color: purple;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #A782EC;
+        }
+    </style>
+</head>
+<body>
+    <!-- Common Navbar Code -->
+<nav style="background-color: #333; padding: 10px; position: fixed; top: 0; width: 100%; z-index: 1000; margin-left:-40px; ">
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+        <a href="/" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Home</a>
+        
+    </div>
+</nav>
+
+    <h1>Instant Diet Recipe Finder</h1>
+    <p class="intro">Discover healthy recipes tailored to your dietary needs. Whether you want to upload a dish image or manually search for a recipe, we’ve got you covered!</p>
+    
+    <div class="card-container">
+        <div class="card">
+            <h2>Upload Image</h2>
+            <p>Got a dish or ingredient in mind? Upload an image, and we'll find a matching recipe for you!</p>
+            <a href="/upload_image_page">Upload Image</a>
+        </div>
+        <div class="card">
+            <h2>Manual Search</h2>
+            <p>Search by diet category and discover hundreds of recipes that match your nutritional needs.</p>
+            <a href="/manual_search_page">Search Now</a>
+        </div>
+    </div>
+    <footer style="background-color: #333; color: white; padding: 20px; position: fixed; bottom: 0; width: 100%; text-align: center;margin-left:-40px; ">
+        <p>&copy; 2024 Recipe Finder. All Rights Reserved.</p>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <a href="/about" style="color: white; text-decoration: none;">About Us</a>
+            <a href="/contact" style="color: white; text-decoration: none;">Contact</a>
+            <a href="/privacy" style="color: white; text-decoration: none;">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>

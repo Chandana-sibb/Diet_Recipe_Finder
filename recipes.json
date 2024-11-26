@@ -1,0 +1,1022 @@
+[
+    {
+        "id": "1",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Grilled Chicken Salad",
+        "ingredients": [
+            "Chicken breast",
+            "Lettuce",
+            "Tomato",
+            "Cucumber",
+            "Olive oil",
+            "Lemon juice",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Grill the chicken breast until fully cooked.",
+            "Chop the chicken into bite-sized pieces.",
+            "Mix lettuce, tomato, and cucumber in a bowl.",
+            "Add grilled chicken on top.",
+            "Drizzle with olive oil and lemon juice.",
+            "Season with salt and black pepper to taste."
+        ]
+    },
+    {
+        "id": "2",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Eggplant Lasagna",
+        "ingredients": [
+            "Eggplant",
+            "Ground beef",
+            "Tomato sauce",
+            "Mozzarella cheese",
+            "Parmesan cheese",
+            "Garlic",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Slice eggplant and grill until tender.",
+            "Cook ground beef with garlic in olive oil.",
+            "Layer eggplant, beef, and tomato sauce in a baking dish.",
+            "Top with mozzarella and Parmesan cheese.",
+            "Bake until cheese is melted and bubbly."
+        ]
+    },
+    {
+        "id": "3",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Spinach and Feta Stuffed Chicken",
+        "ingredients": [
+            "Chicken breasts",
+            "Spinach",
+            "Feta cheese",
+            "Garlic",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Stuff chicken breasts with spinach and feta cheese.",
+            "Secure with toothpicks.",
+            "Sear in olive oil until golden.",
+            "Bake until chicken is fully cooked."
+        ]
+    },
+    {
+        "id": "4",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Zucchini Noodles with Pesto",
+        "ingredients": [
+            "Zucchini",
+            "Basil pesto",
+            "Parmesan cheese",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Spiralize zucchini into noodles.",
+            "Toss with basil pesto.",
+            "Top with Parmesan cheese and season with salt and black pepper."
+        ]
+    },
+    {
+        "id": "5",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Cauliflower Rice Stir-Fry",
+        "ingredients": [
+            "Cauliflower",
+            "Bell peppers",
+            "Carrots",
+            "Green onions",
+            "Soy sauce",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Grate cauliflower to create rice-like texture.",
+            "Stir-fry with bell peppers, carrots, and green onions.",
+            "Season with soy sauce, salt, and black pepper."
+        ]
+    },
+    {
+        "id": "6",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Avocado and Egg Salad",
+        "ingredients": [
+            "Avocado",
+            "Hard-boiled eggs",
+            "Lemon juice",
+            "Salt",
+            "Black pepper",
+            "Chives"
+        ],
+        "procedure": [
+            "Mash avocado and mix with chopped hard-boiled eggs.",
+            "Add lemon juice, salt, and black pepper.",
+            "Garnish with chives."
+        ]
+    },
+    {
+        "id": "7",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Chicken and Broccoli Casserole",
+        "ingredients": [
+            "Chicken breast",
+            "Broccoli",
+            "Cream cheese",
+            "Shredded cheese",
+            "Garlic",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Cook chicken and broccoli.",
+            "Mix with cream cheese and shredded cheese.",
+            "Season with garlic, salt, and black pepper.",
+            "Bake until bubbly."
+        ]
+    },
+    {
+        "id": "8",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Greek Salad",
+        "ingredients": [
+            "Cucumber",
+            "Tomatoes",
+            "Olives",
+            "Feta cheese",
+            "Red onion",
+            "Olive oil",
+            "Oregano",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Combine cucumber, tomatoes, olives, and red onion.",
+            "Top with feta cheese.",
+            "Drizzle with olive oil and season with oregano, salt, and black pepper."
+        ]
+    },
+    {
+        "id": "9",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Bacon-Wrapped Asparagus",
+        "ingredients": [
+            "Asparagus",
+            "Bacon",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Wrap asparagus spears with bacon.",
+            "Place on a baking sheet and drizzle with olive oil.",
+            "Season with salt and black pepper.",
+            "Bake until bacon is crispy."
+        ]
+    },
+    {
+        "id": "10",
+        "category": "Low Carbohydrate Diet",
+        "recipe_name": "Stuffed Bell Peppers",
+        "ingredients": [
+            "Bell peppers",
+            "Ground turkey",
+            "Tomato sauce",
+            "Onion",
+            "Garlic",
+            "Cheese",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Stuff bell peppers with a mixture of ground turkey, tomato sauce, onion, and garlic.",
+            "Top with cheese.",
+            "Bake until peppers are tender."
+        ]
+    },
+    {
+        "id": "11",
+        "category": "Vegan Diet",
+        "recipe_name": "Quinoa Salad",
+        "ingredients": [
+            "Quinoa",
+            "Cherry tomatoes",
+            "Cucumber",
+            "Red onion",
+            "Parsley",
+            "Lemon juice",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Cook quinoa according to package instructions.",
+            "Mix with cherry tomatoes, cucumber, red onion, and parsley.",
+            "Drizzle with lemon juice and olive oil.",
+            "Season with salt and black pepper."
+        ]
+    },
+    {
+        "id": "12",
+        "category": "Vegan Diet",
+        "recipe_name": "Chickpea Curry",
+        "ingredients": [
+            "Chickpeas",
+            "Coconut milk",
+            "Tomatoes",
+            "Onion",
+            "Garlic",
+            "Ginger",
+            "Curry powder",
+            "Spinach"
+        ],
+        "procedure": [
+            "Sauté onion, garlic, and ginger.",
+            "Add curry powder and tomatoes.",
+            "Stir in chickpeas and coconut milk.",
+            "Simmer and add spinach before serving."
+        ]
+    },
+    {
+        "id": "13",
+        "category": "Vegan Diet",
+        "recipe_name": "Lentil Soup",
+        "ingredients": [
+            "Lentils",
+            "Carrots",
+            "Celery",
+            "Onion",
+            "Tomatoes",
+            "Vegetable broth",
+            "Garlic",
+            "Cumin",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Sauté onion, garlic, carrots, and celery.",
+            "Add lentils, tomatoes, and vegetable broth.",
+            "Simmer until lentils are tender.",
+            "Season with cumin, salt, and black pepper."
+        ]
+    },
+    {
+        "id": "14",
+        "category": "Vegan Diet",
+        "recipe_name": "Stuffed Sweet Potatoes",
+        "ingredients": [
+            "Sweet potatoes",
+            "Black beans",
+            "Corn",
+            "Avocado",
+            "Lime juice",
+            "Cilantro",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Bake sweet potatoes until tender.",
+            "Stuff with black beans and corn.",
+            "Top with avocado, lime juice, and cilantro.",
+            "Season with salt and black pepper."
+        ]
+    },
+    {
+        "id": "15",
+        "category": "Vegan Diet",
+        "recipe_name": "Tofu Stir-Fry",
+        "ingredients": [
+            "Tofu",
+            "Bell peppers",
+            "Broccoli",
+            "Carrots",
+            "Soy sauce",
+            "Garlic",
+            "Ginger",
+            "Olive oil"
+        ],
+        "procedure": [
+            "Sauté tofu until golden.",
+            "Add vegetables and stir-fry.",
+            "Season with soy sauce, garlic, and ginger."
+        ]
+    },
+    {
+        "id": "16",
+        "category": "Vegan Diet",
+        "recipe_name": "Sweet Potato and Black Bean Tacos",
+        "ingredients": [
+            "Sweet potatoes",
+            "Black beans",
+            "Tortillas",
+            "Avocado",
+            "Salsa",
+            "Lime juice",
+            "Cilantro"
+        ],
+        "procedure": [
+            "Roast sweet potatoes until tender.",
+            "Fill tortillas with sweet potatoes and black beans.",
+            "Top with avocado, salsa, lime juice, and cilantro."
+        ]
+    },
+    {
+        "id": "17",
+        "category": "Vegan Diet",
+        "recipe_name": "Chia Seed Pudding",
+        "ingredients": [
+            "Chia seeds",
+            "Almond milk",
+            "Maple syrup",
+            "Vanilla extract",
+            "Fresh berries"
+        ],
+        "procedure": [
+            "Mix chia seeds with almond milk, maple syrup, and vanilla extract.",
+            "Refrigerate until thickened.",
+            "Top with fresh berries before serving."
+        ]
+    },
+    {
+        "id": "18",
+        "category": "Vegan Diet",
+        "recipe_name": "Vegan Burrito Bowl",
+        "ingredients": [
+            "Brown rice",
+            "Black beans",
+            "Corn",
+            "Bell peppers",
+            "Avocado",
+            "Lime juice",
+            "Cilantro",
+            "Salsa"
+        ],
+        "procedure": [
+            "Cook brown rice according to package instructions.",
+            "Top with black beans, corn, bell peppers, and avocado.",
+            "Drizzle with lime juice and salsa.",
+            "Garnish with cilantro."
+        ]
+    },
+    {
+        "id": "19",
+        "category": "Vegan Diet",
+        "recipe_name": "Roasted Cauliflower",
+        "ingredients": [
+            "Cauliflower",
+            "Olive oil",
+            "Garlic",
+            "Paprika",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Toss cauliflower with olive oil, garlic, paprika, salt, and black pepper.",
+            "Roast until tender and golden."
+        ]
+    },
+    {
+        "id": "20",
+        "category": "Vegan Diet",
+        "recipe_name": "Cucumber and Avocado Sushi Rolls",
+        "ingredients": [
+            "Nori sheets",
+            "Sushi rice",
+            "Cucumber",
+            "Avocado",
+            "Rice vinegar",
+            "Soy sauce"
+        ],
+        "procedure": [
+            "Prepare sushi rice with rice vinegar.",
+            "Spread rice on nori sheets.",
+            "Add cucumber and avocado slices.",
+            "Roll tightly and slice into pieces.",
+            "Serve with soy sauce."
+        ]
+    },
+    {
+        "id": "21",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Baked Chicken Breast",
+        "ingredients": [
+            "Chicken breast",
+            "Lemon juice",
+            "Garlic",
+            "Rosemary",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Marinate chicken in lemon juice, garlic, and rosemary.",
+            "Bake until chicken is cooked through."
+        ]
+    },
+    {
+        "id": "22",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Vegetable Soup",
+        "ingredients": [
+            "Carrots",
+            "Celery",
+            "Tomatoes",
+            "Green beans",
+            "Vegetable broth",
+            "Herbs"
+        ],
+        "procedure": [
+            "Combine vegetables and broth.",
+            "Simmer until vegetables are tender."
+        ]
+    },
+    {
+        "id": "23",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Turkey and Vegetable Stir-Fry",
+        "ingredients": [
+            "Ground turkey",
+            "Bell peppers",
+            "Broccoli",
+            "Carrots",
+            "Low-sodium soy sauce",
+            "Garlic",
+            "Ginger"
+        ],
+        "procedure": [
+            "Cook ground turkey until browned.",
+            "Add vegetables and stir-fry.",
+            "Season with soy sauce, garlic, and ginger."
+        ]
+    },
+    {
+        "id": "24",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Cucumber and Tomato Salad",
+        "ingredients": [
+            "Cucumber",
+            "Tomatoes",
+            "Red onion",
+            "Lemon juice",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Mix cucumber, tomatoes, and red onion.",
+            "Drizzle with lemon juice and olive oil.",
+            "Season with salt and black pepper."
+        ]
+    },
+    {
+        "id": "25",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Baked Cod with Vegetables",
+        "ingredients": [
+            "Cod fillets",
+            "Zucchini",
+            "Bell peppers",
+            "Olive oil",
+            "Lemon juice",
+            "Garlic",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Season cod fillets with lemon juice, garlic, salt, and black pepper.",
+            "Bake with zucchini and bell peppers until cod is cooked through."
+        ]
+    },
+    {
+        "id": "26",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Greek Yogurt with Berries",
+        "ingredients": [
+            "Greek yogurt",
+            "Mixed berries",
+            "Honey",
+            "Chia seeds"
+        ],
+        "procedure": [
+            "Top Greek yogurt with mixed berries.",
+            "Drizzle with honey and sprinkle chia seeds."
+        ]
+    },
+    {
+        "id": "27",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Spinach and Mushroom Frittata",
+        "ingredients": [
+            "Eggs",
+            "Spinach",
+            "Mushrooms",
+            "Onion",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Sauté mushrooms and onions.",
+            "Add spinach and cook until wilted.",
+            "Pour beaten eggs over mixture.",
+            "Cook until eggs are set."
+        ]
+    },
+    {
+        "id": "28",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Grilled Vegetables",
+        "ingredients": [
+            "Bell peppers",
+            "Zucchini",
+            "Eggplant",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Toss vegetables with olive oil, salt, and black pepper.",
+            "Grill until tender and slightly charred."
+        ]
+    },
+    {
+        "id": "29",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Chicken and Vegetable Skewers",
+        "ingredients": [
+            "Chicken breast",
+            "Bell peppers",
+            "Onion",
+            "Zucchini",
+            "Olive oil",
+            "Garlic",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Marinate chicken with olive oil, garlic, salt, and black pepper.",
+            "Thread onto skewers with vegetables.",
+            "Grill until chicken is cooked through."
+        ]
+    },
+    {
+        "id": "30",
+        "category": "Low-Fat Diet",
+        "recipe_name": "Fruit Smoothie",
+        "ingredients": [
+            "Banana",
+            "Berries",
+            "Almond milk",
+            "Honey"
+        ],
+        "procedure": [
+            "Blend banana, berries, and almond milk until smooth.",
+            "Add honey to taste."
+        ]
+    },
+    {
+        "id": "31",
+        "category": "High Protein Diet",
+        "recipe_name": "Grilled Salmon",
+        "ingredients": [
+            "Salmon fillets",
+            "Lemon",
+            "Olive oil",
+            "Garlic",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Season salmon with lemon, olive oil, garlic, salt, and black pepper.",
+            "Grill until cooked through."
+        ]
+    },
+    {
+        "id": "32",
+        "category": "High Protein Diet",
+        "recipe_name": "Turkey Meatballs",
+        "ingredients": [
+            "Ground turkey",
+            "Breadcrumbs",
+            "Egg",
+            "Parmesan cheese",
+            "Garlic",
+            "Parsley",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Mix ground turkey with breadcrumbs, egg, Parmesan, garlic, and parsley.",
+            "Form into meatballs.",
+            "Bake until cooked through."
+        ]
+    },
+    {
+        "id": "33",
+        "category": "High Protein Diet",
+        "recipe_name": "Beef Stir-Fry",
+        "ingredients": [
+            "Beef strips",
+            "Bell peppers",
+            "Broccoli",
+            "Onion",
+            "Soy sauce",
+            "Garlic",
+            "Ginger",
+            "Olive oil"
+        ],
+        "procedure": [
+            "Sauté beef strips until browned.",
+            "Add vegetables and stir-fry.",
+            "Season with soy sauce, garlic, and ginger."
+        ]
+    },
+    {
+        "id": "34",
+        "category": "High Protein Diet",
+        "recipe_name": "Chicken Quinoa Bowl",
+        "ingredients": [
+            "Chicken breast",
+            "Quinoa",
+            "Spinach",
+            "Avocado",
+            "Olive oil",
+            "Lemon juice",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Cook quinoa according to package instructions.",
+            "Grill chicken breast and slice.",
+            "Combine quinoa, spinach, and chicken.",
+            "Top with avocado and drizzle with olive oil and lemon juice."
+        ]
+    },
+    {
+        "id": "35",
+        "category": "High Protein Diet",
+        "recipe_name": "Tuna Salad",
+        "ingredients": [
+            "Canned tuna",
+            "Greek yogurt",
+            "Celery",
+            "Onion",
+            "Pickles",
+            "Lemon juice",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Mix canned tuna with Greek yogurt.",
+            "Add chopped celery, onion, and pickles.",
+            "Season with lemon juice, salt, and black pepper."
+        ]
+    },
+    {
+        "id": "36",
+        "category": "High Protein Diet",
+        "recipe_name": "Egg White Omelette",
+        "ingredients": [
+            "Egg whites",
+            "Spinach",
+            "Tomatoes",
+            "Onion",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Beat egg whites and pour into a pan.",
+            "Add spinach, tomatoes, and onion.",
+            "Cook until set and season with salt and black pepper."
+        ]
+    },
+    {
+        "id": "37",
+        "category": "High Protein Diet",
+        "recipe_name": "Greek Yogurt Chicken Marinade",
+        "ingredients": [
+            "Greek yogurt",
+            "Lemon juice",
+            "Garlic",
+            "Paprika",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Mix Greek yogurt with lemon juice, garlic, paprika, salt, and black pepper.",
+            "Marinate chicken and grill until cooked through."
+        ]
+    },
+    {
+        "id": "38",
+        "category": "High Protein Diet",
+        "recipe_name": "Cottage Cheese and Fruit",
+        "ingredients": [
+            "Cottage cheese",
+            "Fresh fruit",
+            "Honey"
+        ],
+        "procedure": [
+            "Top cottage cheese with fresh fruit.",
+            "Drizzle with honey."
+        ]
+    },
+    {
+        "id": "39",
+        "category": "High Protein Diet",
+        "recipe_name": "Protein Smoothie",
+        "ingredients": [
+            "Protein powder",
+            "Banana",
+            "Almond milk",
+            "Peanut butter"
+        ],
+        "procedure": [
+            "Blend protein powder, banana, almond milk, and peanut butter until smooth."
+        ]
+    },
+    {
+        "id": "40",
+        "category": "High Protein Diet",
+        "recipe_name": "Edamame Snack",
+        "ingredients": [
+            "Edamame",
+            "Sea salt"
+        ],
+        "procedure": [
+            "Steam edamame and sprinkle with sea salt."
+        ]
+    },
+    {
+        "id": "41",
+        "category": "Diabetic Diet",
+        "recipe_name": "Baked Salmon with Veggies",
+        "ingredients": [
+            "Salmon fillets",
+            "Asparagus",
+            "Cherry tomatoes",
+            "Olive oil",
+            "Lemon",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Season salmon with lemon, salt, and black pepper.",
+            "Bake with asparagus and cherry tomatoes."
+        ]
+    },
+    {
+        "id": "42",
+        "category": "Diabetic Diet",
+        "recipe_name": "Quinoa and Black Bean Salad",
+        "ingredients": [
+            "Quinoa",
+            "Black beans",
+            "Corn",
+            "Cherry tomatoes",
+            "Cilantro",
+            "Lime juice",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Cook quinoa according to package instructions.",
+            "Mix with black beans, corn, cherry tomatoes, and cilantro.",
+            "Drizzle with lime juice and olive oil.",
+            "Season with salt and black pepper."
+        ]
+    },
+    {
+        "id": "43",
+        "category": "Diabetic Diet",
+        "recipe_name": "Greek Yogurt with Nuts",
+        "ingredients": [
+            "Greek yogurt",
+            "Mixed nuts",
+            "Honey",
+            "Cinnamon"
+        ],
+        "procedure": [
+            "Top Greek yogurt with mixed nuts.",
+            "Drizzle with honey and sprinkle with cinnamon."
+        ]
+    },
+    {
+        "id": "44",
+        "category": "Diabetic Diet",
+        "recipe_name": "Spinach and Feta Stuffed Chicken",
+        "ingredients": [
+            "Chicken breasts",
+            "Spinach",
+            "Feta cheese",
+            "Garlic",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Stuff chicken breasts with spinach and feta cheese.",
+            "Sear in olive oil and bake until fully cooked."
+        ]
+    },
+    {
+        "id": "45",
+        "category": "Diabetic Diet",
+        "recipe_name": "Cauliflower Rice Stir-Fry",
+        "ingredients": [
+            "Cauliflower",
+            "Bell peppers",
+            "Carrots",
+            "Green onions",
+            "Soy sauce",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Grate cauliflower to create rice-like texture.",
+            "Stir-fry with bell peppers, carrots, and green onions.",
+            "Season with soy sauce, salt, and black pepper."
+        ]
+    },
+    {
+        "id": "46",
+        "category": "Diabetic Diet",
+        "recipe_name": "Zucchini Noodles with Tomato Sauce",
+        "ingredients": [
+            "Zucchini",
+            "Tomato sauce",
+            "Garlic",
+            "Olive oil",
+            "Basil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Spiralize zucchini into noodles.",
+            "Heat tomato sauce with garlic and olive oil.",
+            "Toss zucchini noodles with sauce.",
+            "Season with basil, salt, and black pepper."
+        ]
+    },
+    {
+        "id": "47",
+        "category": "Diabetic Diet",
+        "recipe_name": "Lentil Soup",
+        "ingredients": [
+            "Lentils",
+            "Carrots",
+            "Celery",
+            "Onion",
+            "Tomatoes",
+            "Vegetable broth",
+            "Garlic",
+            "Cumin",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Sauté onion, garlic, carrots, and celery.",
+            "Add lentils, tomatoes, and vegetable broth.",
+            "Simmer until lentils are tender.",
+            "Season with cumin, salt, and black pepper."
+        ]
+    },
+    {
+        "id": "48",
+        "category": "Diabetic Diet",
+        "recipe_name": "Baked Chicken Breast",
+        "ingredients": [
+            "Chicken breast",
+            "Lemon juice",
+            "Garlic",
+            "Rosemary",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Marinate chicken in lemon juice, garlic, and rosemary.",
+            "Bake until chicken is cooked through."
+        ]
+    },
+    {
+        "id": "49",
+        "category": "Diabetic Diet",
+        "recipe_name": "Cucumber and Tomato Salad",
+        "ingredients": [
+            "Cucumber",
+            "Tomatoes",
+            "Red onion",
+            "Lemon juice",
+            "Olive oil",
+            "Salt",
+            "Black pepper"
+        ],
+        "procedure": [
+            "Mix cucumber, tomatoes, and red onion.",
+            "Drizzle with lemon juice and olive oil.",
+            "Season with salt and black pepper."
+        ]
+    },
+    {
+        "id": "50",
+        "category": "Diabetic Diet",
+        "recipe_name": "Avocado and Egg Salad",
+        "ingredients": [
+            "Avocado",
+            "Hard-boiled eggs",
+            "Lemon juice",
+            "Salt",
+            "Black pepper",
+            "Chives"
+        ],
+        "procedure": [
+            "Mash avocado and mix with chopped hard-boiled eggs.",
+            "Add lemon juice, salt, and black pepper.",
+            "Garnish with chives."
+        ]
+    },
+    {
+        "id": "51",
+        "category": "Clear Liquid Diet",
+        "recipe_name": "Broth",
+        "ingredients": [
+            "Chicken bones",
+            "Onion",
+            "Carrot",
+            "Celery",
+            "Salt",
+            "Pepper"
+        ],
+        "procedure": [
+            "Simmer chicken bones with onion, carrot, and celery.",
+            "Season with salt and pepper.",
+            "Strain and serve clear."
+        ]
+    },
+    {
+        "id": "52",
+        "category": "Clear Liquid Diet",
+        "recipe_name": "Vegetable Juice",
+        "ingredients": [
+            "Tomatoes",
+            "Cucumber",
+            "Celery",
+            "Carrot",
+            "Salt",
+            "Pepper"
+        ],
+        "procedure": [
+            "Juice tomatoes, cucumber, celery, and carrot.",
+            "Season with salt and pepper to taste."
+        ]
+    },
+    {
+        "id": "53",
+        "category": "Clear Liquid Diet",
+        "recipe_name": "Herbal Tea",
+        "ingredients": [
+            "Herbal tea bag",
+            "Hot water",
+            "Lemon (optional)",
+            "Honey (optional)"
+        ],
+        "procedure": [
+            "Steep tea bag in hot water.",
+            "Add lemon or honey if desired."
+        ]
+    },
+    {
+        "id": "54",
+        "category": "Clear Liquid Diet",
+        "recipe_name": "Apple Juice",
+        "ingredients": [
+            "Apples",
+            "Water",
+            "Sugar (optional)"
+        ],
+        "procedure": [
+            "Juice apples and mix with water.",
+            "Add sugar if needed."
+        ]
+    },
+    {
+        "id": "55",
+        "category": "Clear Liquid Diet",
+        "recipe_name": "Gelatin Dessert",
+        "ingredients": [
+            "Gelatin powder",
+            "Water",
+            "Sugar (optional)"
+        ],
+        "procedure": [
+            "Dissolve gelatin powder in hot water.",
+            "Add sugar if desired.",
+            "Refrigerate until set."
+        ]
+    }
+]

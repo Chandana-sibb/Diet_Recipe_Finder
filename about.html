@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Recipe Finder</title>
+    <style>
+        .container{
+            background-color:#3342;
+            padding:30px;
+            border-radius:5px;
+
+
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin-top: 60px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            padding:30px;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Flexbox container to hold images */
+        .image-container {
+            display: flex;
+            justify-content: space-between; /* Space between each image */
+            align-items: center; /* Align images vertically at center */
+            padding: 10px;
+        }
+
+        /* Styling individual images */
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin: 0 10px; /* Add spacing between images */
+        }
+
+        /* Limit the image container width */
+        .image-container {
+            max-width: 100%; /* Ensure it fits the viewport width */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav style="background-color: #333; padding: 10px; position: fixed; top: 0; width: 100%; z-index: 1000;margin-left:-40px; ">
+        <div style="display: flex; justify-content: space-around; align-items: center;">
+            <a href="/" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Home</a>
+            <a href="/upload_image_page" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Upload Recipe</a>
+            <a href="/manual_search_page" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Manual Search</a>
+        </div>
+    </nav>
+
+    <h1>About Us</h1>
+    <div class="container">
+    <p>Welcome to Recipe Finder, your go-to source for discovering delicious recipes tailored to various diet categories. Whether you're looking for low-carb meals or vegan options, we’ve got you covered!</p>
+    <p>Our mission is to help you find recipes that fit your dietary needs, easily and conveniently. Happy cooking!</p>
+<div>
+    <div class="image-container">
+        <img src="\food-11\evaluation\diabetic_stuffed_bell_peppers.jpg" alt="Image 1">
+        <img src="\food-11\evaluation\high_protein_chicken_breast_with_veggies.jpg" alt="Image 2">
+        <img src="\food-11\evaluation\high_protein_protein_smoothie.jpg" alt="Image 3">
+        <img src="\food-11\evaluation\regular_cheese_pizza.jpg" alt="Image 4">
+    </div>
+    <!-- Footer -->
+    <footer style="background-color: #333; color: white; padding: 20px; position: fixed; bottom: 0; width: 100%; text-align: center;margin-left:-40px; ">
+        <p>&copy; 2024 Recipe Finder. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

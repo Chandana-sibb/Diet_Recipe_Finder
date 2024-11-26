@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Recipe Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-top:60px;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #f3e7e9, #e3eeff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        h1, h2 {
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+        }
+
+        form, #result {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 20px auto;
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        label {
+            margin-bottom: 10px;
+            font-weight: 600;
+            display: block;
+        }
+
+        select, input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        select:focus, input[type="submit"]:focus {
+            border-color: #6c63ff;
+        }
+
+        input[type="submit"] {
+            background: #6c63ff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #5349c8;
+        }
+
+        #result img {
+            max-width: 100%;
+            max-height: 200px; /* Adjust this as needed */
+            object-fit: cover; /* Ensures the image fits within the box without distortion */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        #result p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Common Navbar Code -->
+<nav style="background-color: #333; padding: 10px; position: fixed; top: 0; width: 100%; z-index: 1000;">
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+        <a href="/" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Home</a>
+        <a href="/upload_image_page" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Upload Image</a>
+        
+    </div>
+</nav>
+
+    <h1>Search for a Recipe Manually</h1>
+    <form id="searchForm" method="post">
+        <label for="category">Select Diet Category:</label>
+        <select name="category" id="category">
+            <option value="Low Carbohydrate Diet">Low Carbohydrate Diet</option>
+            <option value="Vegan Diet">Vegan Diet</option>
+            <option value="Low-Fat Diet">Low-Fat Diet</option>
+            <option value="High Protein Diet">High Protein Diet</option>
+            <option value="Regular Diet">Regular Diet</option>
+            <option value="Diabetic Diet">Diabetic Diet</option>
+            <option value="Clear Liquid Diet">Clear Liquid Diet</option>
+        </select><br><br>
+
+        <label for="recipe_name">Select Recipe Name:</label>
+        <select name="recipe_name" id="recipe_name">
+            <!-- Options will be dynamically populated from the server -->
+        </select><br><br>
+        
+        <input type="submit" value="Search">
+    </form>
+    
+    <div id="result" style="display: none;">
+        <h2>Recipe Details</h2>
+        <img id="recipe_image" src="" alt="Recipe Image" >
+
+        <p id="recipe_name_display"></p>
+        <p id="ingredients"></p>
+        <p id="procedure"></p>
+        <p id="diet_category_name"></p>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        document.getElementById('category').onchange = function() {
+            let category = this.value;
+            console.log(`Selected category: ${category}`); // Log selected category
+
+            fetch(`/search_recipe?category=${category}`)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Fetched data:', data); // Log fetched data
+
+                    let select = document.getElementById('recipe_name');
+                    select.innerHTML = ''; // Clear previous options
+
+                    if (data.recipes && data.recipes.length > 0) {
+                        data.recipes.forEach(recipe => {
+                            let option = document.createElement('option');
+                            option.value = recipe;
+                            option.textContent = recipe;
+                            select.appendChild(option);
+                        });
+                    } else {
+                        console.error('No recipes found for this category');
+                    }
+                })
+                .catch(error => console.error('Fetch error:', error));
+        };
+
+        document.getElementById('searchForm').onsubmit = function(event) {
+            event.preventDefault();
+            let formData = new FormData(this);
+
+            fetch('/manual_search', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                } else {
+                    document.getElementById('result').style.display = 'block';
+                    document.getElementById('recipe_image').src = `/food-11/evaluation/${data.image_url}`;
+
+                    document.getElementById('recipe_name_display').textContent = 'Recipe Name: ' + data.recipe_name;
+                    document.getElementById('ingredients').textContent = 'Ingredients: ' + data.ingredients;
+                    document.getElementById('procedure').textContent = 'Procedure: ' + data.procedure;
+                    document.getElementById('diet_category_name').textContent = 'Best Suitable For: ' + data.best_suitable_for;
+                }
+            })
+            .catch(error => console.error('Form submission error:', error));
+        };
+    </script>
+</body>
+</html>

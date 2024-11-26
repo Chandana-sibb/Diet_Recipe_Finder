@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            margin-top:60px;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(120deg, #f3e7e9, #e3eeff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #333;
+        }
+        
+        h1, h2 {
+            font-weight: 600;
+            color: #333;
+            text-align: center;
+        }
+        
+        /* Upload Page Styles */
+        #upload-page {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 20px auto;
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        #upload-page h1 {
+            margin-top: 0;
+        }
+        
+        #upload-page form {
+            margin-bottom: 20px;
+        }
+        
+        #upload-page label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        #upload-page select, #upload-page button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+        
+        #upload-page select:focus, #upload-page button[type="submit"]:focus {
+            border-color: #6c63ff;
+        }
+        
+        #upload-page button[type="submit"] {
+            background: #6c63ff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #upload-page button[type="submit"]:hover {
+            background-color: #5349c8;
+        }
+        
+        #result {
+            display: none;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 20px auto;
+            animation: fadeIn 0.6s ease-out;
+        }
+        
+        #result img {
+            max-width: 60%;
+            max-height:400px; /* Adjust this as needed */
+            object-fit: cover; /* Ensures the image fits within the box without distortion */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        #result p {
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #555;
+        }
+        
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- Common Navbar Code -->
+<nav style="background-color: #333; padding: 10px; position: fixed; top: 0; width: 100%; z-index: 1000;">
+    <div style="display: flex; justify-content: space-around; align-items: center;">
+        <a href="/" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Home</a>
+       
+        <a href="/manual_search_page" style="color: white; text-align: center; padding: 14px 20px; text-decoration: none; font-size: 18px;">Manual Search</a>
+    </div>
+</nav>
+
+    <div id="upload-page">
+        <h1>Upload Image for Recipe Generation</h1>
+        <form id="upload_form" method="POST" enctype="multipart/form-data">
+            <label for="imageSelect">Select Image:</label>
+            <select id="imageSelect" name="image_name">
+                <!-- Options will be dynamically populated by JavaScript -->
+            </select>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+
+    <div id="result">
+        <h2>Recipe Details</h2>
+        <p id="recipe_name_display"></p>
+        <p id="ingredients"></p>
+        <p id="procedure"></p>
+        <p id="diet_category_name"></p>
+        <img id="uploaded_image" src="{{image_url}}" alt="Uploaded Image">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Populate dropdown with image filenames
+            $.getJSON('/get_image_list', function(data) {
+                var select = $('#imageSelect');
+                $.each(data.images, function(index, image) {
+                    select.append($('<option>', { value: image, text: image }));
+                });
+            });
+
+            $('#upload_form').on('submit', function(e) {
+                e.preventDefault();
+                var selectedImage = $('#imageSelect').val();
+                
+                $.ajax({
+                    url: '/upload_image',
+                    type: 'POST',
+                    data: { image_name: selectedImage },
+                    success: function(response) {
+                        $('#result').show();
+                        $('#recipe_name_display').text('Recipe Name: ' + response.recipe_name);
+                        $('#ingredients').text('Ingredients: ' + response.ingredients);
+                        $('#procedure').text('Procedure: ' + response.procedure);
+                        $('#diet_category_name').text('Best Suitable For: ' + response.best_suitable_for);
+                        $('#uploaded_image').attr('src', 'food-11/evaluation/' + selectedImage);
+                    },
+                    error: function(xhr, status, error) {
+                        alert('An error occurred: ' + xhr.responseText);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
